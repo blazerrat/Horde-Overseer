@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./dark.css">
-    <title>Stable Horde Workers</title>
+    <title>KAI Horde Workers</title>
 </head>
 <body>
     <div id="sidebar">
         <div id="signIn"><h1>Enter User ID:<div style="font-size:15px; margin-bottom: 10px">eg. 248 for aqualxx#248</div> </h1><input type="text" class="input" id="uid"><button id="submitUid">Submit</button></div>
         <div id="sidebarInfo"></div><br><br>
-        <table id="leaderboard" style="display: none;">
+        <!-- <table id="leaderboard" style="display: none;">
             <tr>
                 <th>#</th>
                 <th>User</th>
@@ -21,6 +21,26 @@
             <tr>
                 <td>Loading...</td>
                 <td>Loading...</th>
+                <td>Loading...</td>
+            </tr>
+        </table> -->
+        <table id="modelsStats" style="display: none;">
+            <tr>
+                <th>#</th>
+                <th>Model</th>
+                <th>Count</th>
+                <th>ETA</th>
+                <th>Jobs</th>
+                <th>Queue</th>
+                <th>T/s</th>
+            </tr>
+            <tr>
+                <td>Loading...</td>
+                <td>Loading...</th>
+                <td>Loading...</td>
+                <td>Loading...</td>
+                <td>Loading...</th>
+                <td>Loading...</td>
                 <td>Loading...</td>
             </tr>
         </table>
@@ -44,7 +64,8 @@
                 <h1 style="margin: 0">Options</h1>
                 <ul>
                     <li>Light Mode: <input type="checkbox" name="lightmode" id="lightmode"></li>
-                    <li>Leaderboard: <input type="checkbox" name="leaderboardOption" id="leaderboardOption"><br><i style="font-size:16px;">(leaderboard may take time to load due to rate limiting)</i></li>
+                    <!-- <li>Leaderboard: <input type="checkbox" name="leaderboardOption" id="leaderboardOption"><br><i style="font-size:16px;">(leaderboard may take time to load due to rate limiting)</i></li> -->
+                    <li>Models Stats: <input type="checkbox" name="modelsStatsOption" id="modelsStatsOption"><br><i style="font-size:16px;">(models stats may take time to load due to rate limiting)</i></li>
                     <li>Sort Workers By: <select name="sortWorkers" id="sortWorkers">
                         <option value="none">None</option>
                         <option value="time">Uptime</option>

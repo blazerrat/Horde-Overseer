@@ -14,7 +14,7 @@ html, body {
 .container-container {
     overflow-y: auto;
     height: calc(100% - 50px);
-    width: 80%;
+    width: 70%;
     right: 0;
     bottom: 0;
     position: absolute;
@@ -39,7 +39,7 @@ html, body {
     left: 0;
     position: absolute;
     height: 100%;
-    width: calc(20% - 20px);
+    width: calc(30% - 20px);
     padding: 0 10px;
 
     transition: 0.2s background-color ease-in-out;
@@ -50,7 +50,7 @@ html, body {
     position: absolute;
     height: 45px;
     /* 20px for padding, 1px for sidebar border */
-    width: calc(80% - 21px);
+    width: calc(70% - 21px);
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -64,7 +64,7 @@ html, body {
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .link:hover {
@@ -105,6 +105,10 @@ html, body {
 }
 
 #leaderboard {
+    width: 100%;
+}
+
+#modelsStats {
     width: 100%;
 }
 
