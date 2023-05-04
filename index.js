@@ -153,7 +153,7 @@ async function updateModelsStats() {
             <th>T/s</th>
         </tr>
     `;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < models.length; i++) {
         const model = models[i];
         modelsStats.innerHTML += `
             <tr>
@@ -304,4 +304,4 @@ updateModelsStats();
 setInterval(updateWorkers, 1000 * 10);
 setInterval(updateSidebarInfo, 1000 * 10);
 //setInterval(updateLeaderboard, 1000 * 60);
-setInterval(updateModelsStats, 1000 * 60);
+setInterval(updateModelsStats, 1000 * 40);
