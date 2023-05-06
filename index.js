@@ -207,6 +207,7 @@ async function updateWorkers(useCached = false) {
             ==================<br><br>
             <div style="font-size:20px;font-weight:800">${worker.name} - ${secondsToDhm(worker.uptime)}</div>
             <div style="font-size:12px; margin-bottom: 10px">ID: ${worker.id}</div>
+            <div>Model: ${worker.models[0]}</div>
             <div>Max Length: ${worker.max_length}</div>
             <div>Max Context Length: ${worker.max_context_length}</div>
             <div>Requests Fulfilled: ${worker.requests_fulfilled} - ${worker.performance.split(" ")[0]} Tokens/s</div>
